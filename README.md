@@ -30,3 +30,15 @@ Create a file called `email_config.json`:
   "username": "apikey",
   "password": "your_sendgrid_api_key"
 }
+
+Project Structure
+bulk_email_sender/
+│
+├── email_config.json       # SMTP settings
+├── recipients.csv          # Recipient email list
+├── templates/
+│   └── email_template.html # HTML email body
+├── sender.py               # Main script to send emails
+├── utils.py                # Helpers (CSV loading, logging)
+└── email_log.txt           # Sent/failed log
+
